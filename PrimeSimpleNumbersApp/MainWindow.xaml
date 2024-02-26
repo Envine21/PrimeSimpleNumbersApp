@@ -1,0 +1,16 @@
+﻿<Window x:Class="SimpleNumbersApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Simple Numbers App" Height="300" Width="400">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Введите диапазон значений:" />
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="startTextBox" Width="100" Margin="0,0,10,0" />
+                <TextBox x:Name="endTextBox" Width="100" Margin="0,0,10,0" />
+                <Button Content="Найти простые числа" Click="FindPrimes_Click"/>
+            </StackPanel>
+            <TextBlock x:Name="resultText" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
